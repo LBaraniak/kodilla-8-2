@@ -2,13 +2,19 @@
 
 var a = 0,
 	h = 0,
-	triagleArea = 0;
+	value = 0,
+	czyDodatnia = null;
 
 
-a = prompt('Podaj podstawię trójkąta:');
-h = prompt('Podaj wysokość trójkąta');
+a = prompt('Podaj wartość a:');
+b = prompt('Podaj wartość b:');
 
-triagleArea = a * h / 2;
+value = (a * a) + (2 * a * b) - (b * b);
+console.log(value);
 
-alert('Pole trójkąta o podstawie a = ' + a + ' i wysokości h = ' + h + ' wynosi: ' + triagleArea);
-console.log('Pole trójkąta o podstawie a = ' + a + ' i wysokości h = ' + h + ' wynosi: ' + triagleArea);
+(value >=0) ? czyDodatnia = 'dodatnia' : czyDotatnia - 'ujemna';
+
+
+alert('wartość value wynosi: ' + value + '.\nWartość ta jest ' + czyDodatnia);
+console.log('wartość value wynosi: ' + value + '. Wartość ta jest ' + czyDodatnia);
+	
